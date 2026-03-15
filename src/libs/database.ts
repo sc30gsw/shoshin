@@ -42,7 +42,6 @@ export async function migrateDbIfNeeded(db: SQLiteDatabase): Promise<void> {
 
   if (currentVersion === 1) {
     await db.execAsync(`
-      ALTER TABLE goals ADD COLUMN reminder_weekday INTEGER NOT NULL DEFAULT 2;
       ALTER TABLE goals ADD COLUMN reminder_day INTEGER NOT NULL DEFAULT 1;
     `);
     currentVersion = 2;
