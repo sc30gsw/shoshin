@@ -1,0 +1,100 @@
+{
+  "app": {
+    "name": "初心"
+  },
+  "tab": {
+    "home": "ホーム",
+    "settings": "設定"
+  },
+  "home": {
+    "title": "目標",
+    "empty": {
+      "title": "初心を大切に",
+      "description": "目標を登録して、始めた理由（WHY）を記録しましょう。\nプッシュ通知で定期的にWHYをリマインドし、\n初心を忘れないようにします。"
+    },
+    "add": "目標を追加"
+  },
+  "goal": {
+    "name": "目標名",
+    "namePlaceholder": "例: TypeScriptをマスターする",
+    "goal": "具体的な目標",
+    "goalPlaceholder": "例: TypeScriptで型安全なアプリを作れるようになる",
+    "why": "始めた理由（WHY）",
+    "whyCardTitle": "{{name}}を始めた理由（WHY）",
+    "whyPlaceholder": "なぜこの目標を始めようと思いましたか？\n初心・動機・情熱を書き留めましょう",
+    "category": "カテゴリ",
+    "targetDate": "目標期日",
+    "targetDateOptional": "目標期日（任意）",
+    "reminderInterval": "通知頻度",
+    "reminderHour": "通知時刻",
+    "reminderWeekday": "通知する曜日",
+    "reminderDay": "通知する日",
+    "active": "リマインダー通知",
+    "activeDescription": "通知でWHYをリマインドする",
+    "create": "目標を作成",
+    "edit": "目標を編集",
+    "save": "保存",
+    "delete": "削除",
+    "deleteConfirm": "この目標を削除しますか？",
+    "deleteConfirmMessage": "削除すると元に戻せません",
+    "cancel": "キャンセル",
+    "created": "作成日",
+    "updated": "更新日"
+  },
+  "category": {
+    "skill": "スキル習得",
+    "habit": "習慣形成",
+    "qualification": "資格取得",
+    "learning": "学習"
+  },
+  "weekday": {
+    "sun": "日",
+    "mon": "月",
+    "tue": "火",
+    "wed": "水",
+    "thu": "木",
+    "fri": "金",
+    "sat": "土"
+  },
+  "reminder": {
+    "daily": "毎日",
+    "weekly": "毎週",
+    "monthly": "毎月",
+    "daySuffix": "日",
+    "daySkipWarning": "月によってはこの日が存在しないため、通知がスキップされます",
+    "dayAdjustLabel": "存在しない月は末日に自動調整されます",
+    "dayAdjustFeb": "2月 → 28日",
+    "dayAdjustShortMonths": "4月・6月・9月・11月 → 30日",
+    "notification": {
+      "title": "初心を忘れずに",
+      "body": "{{name}}: {{why}}"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "language": "言語",
+    "notifications": "通知設定",
+    "notificationsDescription": "目標のリマインダー通知を管理します",
+    "notificationsRequest": "通知を許可する",
+    "notificationsGranted": "許可済み",
+    "notificationsAlreadyGranted": "通知はすでに許可されています。設定アプリで変更できます。",
+    "notificationsDenied": "通知が拒否されています",
+    "notificationsDeniedMessage": "設定アプリから通知を許可してください。",
+    "openSettings": "設定を開く",
+    "about": "このアプリについて",
+    "aboutDescription": "「始めた理由を忘れない」\n目標とWHYを記録し、初心を保ち続けるアプリです。"
+  },
+  "language": {
+    "ja": "日本語",
+    "en": "English"
+  },
+  "validation": {
+    "required": "必須項目です",
+    "minLength": "{{min}}文字以上入力してください"
+  },
+  "error": {
+    "loadFailed": "読み込みに失敗しました",
+    "saveFailed": "保存に失敗しました",
+    "deleteFailed": "削除に失敗しました"
+  }
+}

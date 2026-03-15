@@ -1,0 +1,100 @@
+{
+  "app": {
+    "name": "Shoshin"
+  },
+  "tab": {
+    "home": "Home",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "Goals",
+    "empty": {
+      "title": "Remember Your Why",
+      "description": "Add a goal and record why you started it.\nWe'll remind you of your WHY with push notifications\nso you never forget your beginner's mind."
+    },
+    "add": "Add Goal"
+  },
+  "goal": {
+    "name": "Goal Name",
+    "namePlaceholder": "e.g. Master TypeScript",
+    "goal": "Specific Goal",
+    "goalPlaceholder": "e.g. Build type-safe apps with TypeScript",
+    "why": "Why You Started (WHY)",
+    "whyCardTitle": "Why I started \"{{name}}\"",
+    "whyPlaceholder": "Why did you start this goal?\nWrite down your reason, motivation, and passion",
+    "category": "Category",
+    "targetDate": "Target Date",
+    "targetDateOptional": "Target Date (optional)",
+    "reminderInterval": "Notification Frequency",
+    "reminderHour": "Notification Time",
+    "reminderWeekday": "Day of Week",
+    "reminderDay": "Day of Month",
+    "active": "Reminder Notifications",
+    "activeDescription": "Get notified to remember your WHY",
+    "create": "Create Goal",
+    "edit": "Edit Goal",
+    "save": "Save",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this goal?",
+    "deleteConfirmMessage": "This action cannot be undone",
+    "cancel": "Cancel",
+    "created": "Created",
+    "updated": "Updated"
+  },
+  "category": {
+    "skill": "Skill",
+    "habit": "Habit",
+    "qualification": "Qualification",
+    "learning": "Learning"
+  },
+  "weekday": {
+    "sun": "Sun",
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri",
+    "sat": "Sat"
+  },
+  "reminder": {
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "daySuffix": "th",
+    "daySkipWarning": "Some months don't have this day, so the notification may be skipped",
+    "dayAdjustLabel": "Auto-adjusted to last day for shorter months",
+    "dayAdjustFeb": "Feb → 28th",
+    "dayAdjustShortMonths": "Apr / Jun / Sep / Nov → 30th",
+    "notification": {
+      "title": "Remember Your Beginner's Mind",
+      "body": "{{name}}: {{why}}"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "notificationsDescription": "Manage reminders for your goals",
+    "notificationsRequest": "Enable Notifications",
+    "notificationsGranted": "Enabled",
+    "notificationsAlreadyGranted": "Notifications are already enabled. You can change this in the Settings app.",
+    "notificationsDenied": "Notifications Denied",
+    "notificationsDeniedMessage": "Please enable notifications in the Settings app.",
+    "openSettings": "Open Settings",
+    "about": "About",
+    "aboutDescription": "\"Never forget why you started.\"\nRecord your goals and WHY to maintain your beginner's mind."
+  },
+  "language": {
+    "ja": "日本語",
+    "en": "English"
+  },
+  "validation": {
+    "required": "This field is required",
+    "minLength": "Must be at least {{min}} characters"
+  },
+  "error": {
+    "loadFailed": "Failed to load",
+    "saveFailed": "Failed to save",
+    "deleteFailed": "Failed to delete"
+  }
+}
