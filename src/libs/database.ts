@@ -39,10 +39,20 @@ export async function migrateDbIfNeeded(db: SQLiteDatabase): Promise<void> {
   }
 
   if (currentVersion === 1) {
-    await db.execAsync(`
-      ALTER TABLE goals ADD COLUMN reminder_weekday INTEGER NOT NULL DEFAULT 2;
-      ALTER TABLE goals ADD COLUMN reminder_day INTEGER NOT NULL DEFAULT 1;
-    `);
+    const columns = await db.getAllAsync<{ name: string }>(
+      "PRAGMA table_info(goals)"
+    );
+    const columnNames = columns.map((c) => c.name);
+    if (!columnNames.includes("reminder_weekday")) {
+      await db.execAsync(
+        "ALTER TABLE goals ADD COLUMN reminder_weekday INTEGER NOT NULL DEFAULT 2;"
+      );
+    }
+    if (!columnNames.includes("reminder_day")) {
+      await db.execAsync(
+        "ALTER TABLE goals ADD COLUMN reminder_day INTEGER NOT NULL DEFAULT 1;"
+      );
+    }
     currentVersion = 2;
   }
 
